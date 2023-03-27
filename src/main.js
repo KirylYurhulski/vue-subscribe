@@ -4,4 +4,12 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
-createApp(App).use(store).use(router).mount('#app')
+import MainLayout from './layout/MainLayout'
+import LogoLayout from './layout/LogoLayout'
+
+createApp(App)
+  .component('main-layout', MainLayout)
+  .component('logo-layout', LogoLayout)
+  .use(store)
+  .use(router)
+  .mount('#app')
