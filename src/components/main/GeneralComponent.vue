@@ -6,7 +6,7 @@
     <p>Web Designer</p>
     <div class="num-box w-100 d-flex">
       <div class="hire">
-        <b>55+</b> <br>
+        <b>100+</b> <br>
         <span>Projects </span>
       </div>
       <div class="msg">
