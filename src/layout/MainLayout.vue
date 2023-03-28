@@ -1,36 +1,35 @@
 <template>
   <div class="container-fluid">
     <div class="container profile-container">
-      <NavBarHeadComponent />
+      <NavBarHead />
 
       <div class="row">
         <div id="menu-jk" class="col-md-4">
-          <GeneralComponent />
-          <SocialComponent />
+          <GeneralInfo />
+          <ContactLink />
         </div>
 
         <slot />
-
       </div>
 
-      <FooterComponent />
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import NavBarHeadComponent from '@/components/main/navBar/NavBarHeadComponent.vue'
-import GeneralComponent from '@/components/main/GeneralComponent.vue'
-import SocialComponent from '@/components/main/SocialComponent'
-import FooterComponent from '@/components/main/footer/FooterComponent.vue'
+import NavBarHead from '@/components/main/navBar/app-nav-head.vue'
+import GeneralInfo from '@/components/main/general-info.vue'
+import ContactLink from '@/components/main/contact-link.vue'
+import Footer from '@/components/main/footer/app-footer.vue'
 
 export default {
   name: "MainLayout",
   components: {
-    NavBarHeadComponent,
-    GeneralComponent,
-    SocialComponent,
-    FooterComponent
+    NavBarHead,
+    GeneralInfo,
+    ContactLink,
+    Footer
   }
 }
 </script>

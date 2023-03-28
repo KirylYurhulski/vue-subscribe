@@ -1,22 +1,22 @@
 <template>
   <div class="col-md-8">
-    <AboutMeComponent />
-    <ExperienceComponent />
-    <EducationComponent />
+    <AboutMe />
+    <ExperienceList />
+    <EducationList />
   </div>
 </template>
 
 <script>
-import AboutMeComponent from '@/components/main/AboutMeComponent.vue'
-import ExperienceComponent from '@/components/main/experiance/ExperianceComponent.vue'
-import EducationComponent from '@/components/main/education/EducationDetailsComponent.vue'
+import AboutMe from '@/components/main/about-me.vue'
+import ExperienceList from '@/components/main/experiance/experiance-list.vue'
+import EducationList from '@/components/main/education/edu-list.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    AboutMeComponent,
-    ExperienceComponent,
-    EducationComponent
+    AboutMe,
+    ExperienceList,
+    EducationList
   }
 }
 </script>
